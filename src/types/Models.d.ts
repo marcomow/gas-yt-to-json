@@ -1,7 +1,7 @@
 type YoutubeVideo = {
     id: string;
     title: string;
-    duration: string;
+    duration?: string;
     thumbnail_src: string;
 }
 type YoutubeDuration = {

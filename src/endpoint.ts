@@ -1,4 +1,4 @@
-import { listVideos } from "./list-videos";
+import { listVideos } from "./methods/list-videos";
 
 const doGet = (event: GoogleAppsScript.Events.DoGet): GoogleAppsScript.Content.TextOutput => {
     const videos: YoutubeVideo[] = listVideos(event.parameter['query']);

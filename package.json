@@ -1,0 +1,12 @@
+{
+  "name": "gas-yt-to-json",
+  "version": "1.0.0",
+  "main": "endpoint.ts",
+  "repository": "https://github.com/marcomow/gas-yt-to-json",
+  "author": "marko <marcomow@gmail.com>",
+  "scripts": {
+    "login": "clasp login",
+    "pull": "clasp pull",
+    "watch": "clasp watch"
+  }
+}
