@@ -1,4 +1,6 @@
-const parseYoutubeDuration = (youtubeDuration: string): YoutubeDuration => {
+import { YoutubeDuration } from "./types/models";
+
+export const parseYoutubeDuration_ = (youtubeDuration: string): YoutubeDuration => {
     const regex = /^PT(?:(\d+\.*\d*)H)?(?:(\d+\.*\d*)M)?(?:(\d+\.*\d*)S)?$/;
     const matches = regex.exec(youtubeDuration);
     const hours = Number(matches?.[1] || 0);
@@ -9,4 +11,3 @@ const parseYoutubeDuration = (youtubeDuration: string): YoutubeDuration => {
     }
     return duration;
 }
-export { parseYoutubeDuration }
