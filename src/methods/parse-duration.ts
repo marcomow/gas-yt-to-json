@@ -1,4 +1,4 @@
-import { YoutubeDuration } from "./types/models";
+import { YoutubeDuration } from "../types/models";
 
 export const parseYoutubeDuration_ = (youtubeDuration: string): YoutubeDuration => {
     const regex = /^PT(?:(\d+\.*\d*)H)?(?:(\d+\.*\d*)M)?(?:(\d+\.*\d*)S)?$/;

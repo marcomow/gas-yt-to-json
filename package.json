@@ -5,7 +5,7 @@
   "repository": "https://github.com/marcomow/gas-yt-to-json",
   "author": "marko <marcomow@gmail.com>",
   "scripts": {
-    "login": "clasp login",
+    "login": "npx clasp login",
     "watch": "concurrently npm:watch:*",
     "watch:rollup": "rollup --watch --config",
     "watch:clasp": "clasp push --watch --force"
@@ -19,5 +19,8 @@
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@types/google-apps-script": "^1.0.45",
     "concurrently": "^7.0.0"
+  },
+  "dependencies": {
+    "@google/clasp": "^2.4.2"
   }
 }
